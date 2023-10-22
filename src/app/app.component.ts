@@ -6,5 +6,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'TemplateDrivenForms';
+
+  defaultName = "Default"
+
+  bordered = {
+    active: 0,
+    options: ["bordered", "unbordered"]
+  }
+
+
+  toggleBorders() {
+    this.bordered.active = (this.bordered.active + 1) % 2;
+  }
 }
