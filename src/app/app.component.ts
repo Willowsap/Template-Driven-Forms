@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
@@ -7,15 +8,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
-  defaultName = "Default"
 
-  bordered = {
-    active: 0,
-    options: ["bordered", "unbordered"]
-  }
-
-
-  toggleBorders() {
-    this.bordered.active = (this.bordered.active + 1) % 2;
-  }
 }
